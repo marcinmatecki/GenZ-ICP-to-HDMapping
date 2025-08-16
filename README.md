@@ -71,7 +71,7 @@ ros2 bag record /genz/local_map /genz/odometry -o {your_directory_for_the_record
 ```shell
 cd /test_ws/
 source ./install/setup.sh # adjust to used shell
-ros2 launch genz_icp odometry.launch.py topic:=pp_points/synced2rgb
+ros2 launch genz_icp odometry.launch.py topic:=/os1_cloud_node1/points
 ros2 bag play <rosbag_file_name>.db3
 ```
 
