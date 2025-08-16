@@ -1,0 +1,6 @@
+[submodule "src/genz-icp"]
+	path = src/genz-icp
+	url = https://github.com/cocel-postech/genz-icp
+[submodule "src/genz-icp-to-hdmapping/src/3rdparty/LASzip"]
+	path = src/genz-icp-to-hdmapping/src/3rdparty/LASzip
+	url = https://github.com/LASzip/LASzip.git
