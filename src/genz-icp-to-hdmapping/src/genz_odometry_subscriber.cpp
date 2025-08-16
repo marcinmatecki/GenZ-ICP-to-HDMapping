@@ -86,8 +86,8 @@ int main(int argc, char **argv)
     {
         rosbag2_storage::SerializedBagMessageSharedPtr msg = bag.read_next();
 
-        if (msg->topic_name == "/genz/planar_points") {
-            RCLCPP_INFO(rclcpp::get_logger("GenzFrame"), "Received message on topic: /genz/planar_points");
+        if (msg->topic_name == "/genz/local_map") {
+            RCLCPP_INFO(rclcpp::get_logger("GenzFrame"), "Received message on topic: /genz/local_map");
         
             rclcpp::SerializedMessage serialized_msg(*msg->serialized_data);
             auto cloud_msg = std::make_shared<sensor_msgs::msg::PointCloud2>();
