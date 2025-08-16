@@ -7,6 +7,12 @@ This repository contains ROS 2 workspace that :
   - submodule to tested revision of GenZ ICP
   - a converter that listens to topics advertised from odometry node and save data in format compatible with HDMapping.
 
+## Dependencies
+
+```shell
+sudo apt install -y nlohmann-json3-dev
+```
+
 ## Building
 
 Clone the repo
